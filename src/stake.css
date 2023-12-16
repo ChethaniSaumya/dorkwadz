@@ -1,0 +1,6106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
+@keyframes changeBorderColor {
+  0% {
+    border-color: #ee5849; /* Initial color */
+  }
+  25% {
+    border-color: #ffcc00; /* Change color at 25% */
+  }
+  50% {
+    border-color: #00cc66; /* Change color at 50% */
+  }
+  75% {
+    border-color: #3399ff; /* Change color at 75% */
+  }
+  100% {
+    border-color: #ee5849; /* Back to initial color */
+  }
+}
+
+
+@keyframes changeBorderColor2 {
+  0% {
+    border-color: rgb(0, 131, 50); /* Initial color */
+  }
+  25% {
+    border-color: #ff5e00; /* Change color at 25% */
+  }
+  50% {
+    border-color: #0052cc; /* Change color at 50% */
+  }
+  75% {
+    border-color: #c20563; /* Change color at 75% */
+  }
+  100% {
+    border-color: rgb(114, 95, 55); /* Back to initial color */
+  }
+}
+
+@media screen and (max-width: 499px) {
+
+  .claimIcon {
+    width: 22px;
+    height: 22px;
+    margin-top: -5px;
+  }
+
+  .stakeMainDiv {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
+    background: url('./assets/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .btns {
+
+    width: 150px;
+    background-color: #facc15;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  }
+
+  .btnsDis {
+    width: 150px;
+    background-color: #77946c;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    cursor: no-drop;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns2 {
+    width: 150px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    background-color: rgb(238, 62, 62);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: none;
+  }
+
+  .btns2Dis {
+    width: 150px;
+    background-color: rgb(196, 134, 134);
+    cursor: no-drop;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns:hover {
+    transform: scale(1.1);
+  }
+
+  .btns2:hover {
+    transform: scale(1.1);
+  }
+
+  .btnsMain {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+  }
+
+  .btnsMainBig {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .markBar {
+    background-color: #000000;
+    margin-top: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00000000;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    padding: 15px;
+
+  }
+
+  .markBarCon {
+    border-radius: 20px;
+    border: 1px solid white;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+    border: 2px solid white;
+  }
+
+  .markBar2 {
+    flex-flow: column nowrap;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: -10%;
+  }
+
+  .num {
+    font-size: 16px;
+    color: #ffffff;
+
+    text-align: center;
+  }
+
+  .name {
+    color: #ffffff;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+  .nameClaim {
+    background-color: rgb(87, 163, 15);
+    border: 1px solid rgb(166, 253, 84);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+
+  .nameClaim2 {
+    background-color: rgb(79, 158, 4);
+    border: 1px solid rgb(181, 250, 117);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 13px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    cursor: not-allowed;
+  }
+
+  .num2 {
+    font-size: 16px;
+    color: #e02712;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .name2 {
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .markBar img {
+    width: 70px;
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-right: 20%;
+  }
+
+  .markBarMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .stakeMain {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+  }
+
+  .stakeMain2 {
+    border-right: 20px #f3ba2f solid;
+    border-top: #f3ba2f 20px solid;
+  }
+
+  .sticky {
+    width: 20%;
+
+    bottom: 0;
+    right: 90%;
+    margin-top: -10%;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .board {
+    margin-bottom: 5%;
+    padding: 35px;
+    border: #e02712 5px solid;
+    background-color: #fffa00;
+    border-radius: 50px;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 90%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .boardMain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    margin-bottom: 7%;
+
+  }
+
+  .nameStake {
+    width: 50%;
+  }
+
+  .carrots {
+    width: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .boardImg {
+    background-color: #ffb963;
+
+  }
+
+  .boardPics {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+  }
+
+  .approveBtns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
+
+  .approveBtns1 {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 270px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+  }
+
+  .approveBtns1Dis {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 270px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+    cursor: no-drop;
+  }
+
+  .approveBtns1:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns2:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3 {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 270px;
+    transition: transform .3s;
+    background-color: #f51761;
+  }
+
+  .approveBtns3Dis {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 270px;
+    transition: transform .3s;
+    background-color: #f51761;
+    cursor: no-drop;
+  }
+
+  .approveBtns2 {
+    background: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 23px;
+    border: 4px #70512b solid;
+
+    width: 200px;
+    transition: transform .3s;
+  }
+
+
+  .wallet3 {
+
+    background-color: black;
+    border: solid 3px;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    transition: transform .5s;
+    z-index: 1;
+    margin-bottom: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    animation: changeBorderColor2 5s infinite alternate;
+
+  }
+
+  .lookDown {
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+
+  .wallet3:hover {
+    cursor: pointer;
+    cursor: pointer;
+  }
+
+  .wallet3::after {
+    transition: all 0.8s
+  }
+
+  .btn3 {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .images_show {
+    width: 90%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .stake {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  .stake2 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .stake3 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  
+
+  .tokenIds {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    margin-bottom: 10%;
+  }
+
+  .tokenIds2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 55%;
+  }
+
+  .tS {
+    color: white;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 20px;
+    font-family: 'Passion One', sans-serif;
+  }
+
+  .unstakeImg {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+
+  }
+
+  .imagesAndBtn {
+    justify-content: center;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 150px;
+    perspective: 1000px;
+    background-color: #e0706c;
+    height: fit-content;
+
+    margin-top: 10%;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .btnCenter {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .flip-card-front {
+    /* background-color: #bbb;*/
+    color: black;
+  }
+
+  .flip-card-back {
+    /*background-color: #2980b9;*/
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .loginFormNote {
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+  .formMain2 {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 50%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+    padding: 10px;
+  }
+
+  .formMain {
+    z-index: 10000000000000000;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+
+  }
+
+  .formMain {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+
+  }
+
+  .formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.857);
+  }
+
+  .ownNFT {
+    margin-bottom: 55%;
+  }
+
+  .elementName {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .elementName2 {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .elementName3 {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .medalDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .closeNote {
+    position: absolute;
+    right: 0;
+    top: 1%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 30px;
+
+    background-color: rgba(172, 67, 67, 0);
+    width: 100px;
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+  }
+
+  .closeNote:hover,
+  .closeNote:focus {
+    color: rgb(71, 70, 70);
+  }
+
+  .rewards {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+  }
+
+  .discordB {
+    display: none;
+  }
+
+  .medal {
+    width: 35px;
+    height: 35px;
+  }
+
+  .stakebtn:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtn2:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtnDiv {
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nftImg {
+    width: 80px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+  }
+
+  .nftImgLogo {
+    width: 80px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    
+    margin-bottom: 2%;
+  }
+
+  .nftImg2 {
+    width: 80px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .stakeT {
+    color: #000000;
+    font-family: 'Passion One', sans-serif;
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 767px) {
+
+  .stakeMainDiv {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
+    background: url('./assets/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .btns {
+
+    width: 150px;
+    background-color: #facc15;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  }
+
+  .claimIcon {
+    width: 22px;
+    height: 22px;
+    margin-top: -5px;
+  }
+
+  .btnsDis {
+    width: 150px;
+    background-color: #77946c;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    cursor: no-drop;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns2 {
+    width: 150px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    background-color: rgb(238, 62, 62);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: none;
+  }
+
+  .btns2Dis {
+    width: 150px;
+    background-color: rgb(196, 134, 134);
+    cursor: no-drop;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns:hover {
+    transform: scale(1.1);
+  }
+
+  .btns2:hover {
+    transform: scale(1.1);
+  }
+
+  .btnsMain {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+  }
+
+  .btnsMainBig {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .markBar {
+    background-color: #000000;
+    margin-top: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00000000;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    padding: 15px;
+
+  }
+
+  .markBarCon {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+    border: 2px solid white;
+  }
+
+  .markBar2 {
+    flex-flow: column nowrap;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: -10%;
+  }
+
+  .num {
+    font-size: 14px;
+    color: #ffffff;
+
+    text-align: center;
+  }
+
+  .name {
+    color: #ffffff;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+  .nameClaim {
+    background-color: rgb(87, 163, 15);
+    border: 1px solid rgb(166, 253, 84);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+
+  .nameClaim2 {
+    background-color: rgb(79, 158, 4);
+    border: 1px solid rgb(181, 250, 117);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 16px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    cursor: not-allowed;
+  }
+
+  .num2 {
+    font-size: 20px;
+    color: #e02712;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .name2 {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .markBar img {
+    width: 70px;
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-right: 20%;
+  }
+
+  .markBarMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .stakeMain {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+  }
+
+  .stakeMain2 {
+    border-right: 20px #f3ba2f solid;
+    border-top: #f3ba2f 20px solid;
+  }
+
+  .sticky {
+    width: 20%;
+
+    bottom: 0;
+    right: 90%;
+    margin-top: -10%;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .board {
+    margin-bottom: 5%;
+    padding: 35px;
+    border: #e02712 5px solid;
+    background-color: #fffa00;
+    border-radius: 50px;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 90%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .boardMain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    margin-bottom: 7%;
+
+  }
+
+  .nameStake {
+    width: 50%;
+  }
+
+  .carrots {
+    width: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .boardPics {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+  }
+
+  .approveBtns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
+
+  .approveBtns1 {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 350px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+  }
+
+  .approveBtns1Dis {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 350px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+    cursor: no-drop;
+  }
+
+  .approveBtns1:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns2:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3 {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 350px;
+    transition: transform .3s;
+    background-color: #f51761;
+  }
+
+  .approveBtns3Dis {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 350px;
+    transition: transform .3s;
+    background-color: #f51761;
+    cursor: no-drop;
+  }
+
+  .approveBtns2 {
+    background: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 23px;
+    border: 4px #70512b solid;
+
+    width: 200px;
+    transition: transform .3s;
+  }
+
+
+  .wallet3 {
+
+    background-color: black;
+    border: solid 3px;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    transition: transform .5s;
+    z-index: 1;
+    margin-bottom: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    animation: changeBorderColor2 5s infinite alternate;
+
+  }
+
+  .lookDown {
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+
+  .wallet3:hover {
+    cursor: pointer;
+  }
+
+  .wallet3::after {
+    transition: all 0.8s
+  }
+
+  .btn3 {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .images_show {
+    width: 90%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .stake {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  .stake2 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .stake3 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  
+
+  .tokenIds {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    margin-bottom: 10%;
+  }
+
+  .tokenIds2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40%;
+  }
+
+
+  .tS {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 30px;
+    font-family: 'Passion One', sans-serif;
+  }
+
+  .unstakeImg {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+
+  }
+
+  .imagesAndBtn {
+    justify-content: center;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 150px;
+    perspective: 1000px;
+    background-color: #e0706c;
+    height: fit-content;
+
+    margin-top: 10%;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .btnCenter {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .flip-card-front {
+    /* background-color: #bbb;*/
+    color: black;
+  }
+
+  .flip-card-back {
+    /*background-color: #2980b9;*/
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .loginFormNote {
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+  .formMain {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+  }
+
+  .formMain {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+  }
+
+  .formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.857);
+  }
+
+  .ownNFT {
+    margin-bottom: 40%;
+  }
+
+  .elementName {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .elementName2 {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .elementName3 {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .medalDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .closeNote {
+    position: absolute;
+    right: 0;
+    top: 1%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 30px;
+
+    background-color: rgba(172, 67, 67, 0);
+    width: 100px;
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+  }
+
+  .closeNote:hover,
+  .closeNote:focus {
+    color: rgb(71, 70, 70);
+  }
+
+  .rewards {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+  }
+
+  .discordB {
+    display: none;
+  }
+
+  .medal {
+    width: 35px;
+    height: 35px;
+  }
+
+  .stakebtn:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtn2:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtnDiv {
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nftImg {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+  }
+
+  .nftImgLogo {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    
+    margin-bottom: 2%;
+  }
+
+  .nftImg2 {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .stakeT {
+    color: #000000;
+    font-family: 'Passion One', sans-serif;    
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .stakeMainDiv {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
+    background: url('./assets/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .btns {
+
+    width: 150px;
+    background-color: #facc15;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  }
+
+  .claimIcon {
+    width: 22px;
+    height: 22px;
+    margin-top: -5px;
+  }
+
+  .btnsDis {
+    width: 150px;
+    background-color: #77946c;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    cursor: no-drop;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns2 {
+    width: 150px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    background-color: rgb(238, 62, 62);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: none;
+  }
+
+  .btns2Dis {
+    width: 150px;
+    background-color: rgb(196, 134, 134);
+    cursor: no-drop;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns:hover {
+    transform: scale(1.1);
+  }
+
+  .btns2:hover {
+    transform: scale(1.1);
+  }
+
+  .btnsMain {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+  }
+
+  .btnsMainBig {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .markBar {
+    background-color: #000000;
+    margin-top: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00000000;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    padding: 15px;
+
+  }
+
+  .markBarCon {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+    border: 2px solid white;
+  }
+
+  .markBar2 {
+    flex-flow: column nowrap;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: -10%;
+  }
+
+  .num {
+    font-size: 15px;
+    color: #ffffff;
+
+    text-align: center;
+  }
+
+  .name {
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+  .nameClaim {
+    background-color: rgb(87, 163, 15);
+    border: 1px solid rgb(166, 253, 84);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+
+  .nameClaim2 {
+    background-color: rgb(79, 158, 4);
+    border: 1px solid rgb(181, 250, 117);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    cursor: not-allowed;
+  }
+
+  .num2 {
+    font-size: 20px;
+    color: #e02712;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .name2 {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .markBar img {
+    width: 70px;
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-right: 20%;
+  }
+
+  .markBarMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .stakeMain {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+  }
+
+  .stakeMain2 {
+    border-right: 20px #f3ba2f solid;
+    border-top: #f3ba2f 20px solid;
+  }
+
+  .sticky {
+    width: 20%;
+
+    bottom: 0;
+    right: 90%;
+    margin-top: -10%;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .board {
+    margin-bottom: 5%;
+    padding: 35px;
+    border: #e02712 7px solid;
+    background-color: #fffa00;
+    border-radius: 50px;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 65%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .boardMain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    margin-bottom: 7%;
+
+  }
+
+  .nameStake {
+    width: 50%;
+  }
+
+  .carrots {
+    width: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .boardPics {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+  }
+
+  .approveBtns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
+
+  .approveBtns1 {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+  }
+
+  .approveBtns1Dis {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+    cursor: no-drop;
+  }
+
+  .approveBtns1:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns2:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3 {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #f51761;
+  }
+
+  .approveBtns3Dis {
+    cursor: no-drop;
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #f51761;
+  }
+
+  .approveBtns2 {
+    background: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 23px;
+    border: 4px #70512b solid;
+
+    width: 200px;
+    transition: transform .3s;
+  }
+
+
+  .wallet3 {
+
+    background-color: black;
+    border: solid 3px;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    transition: transform .5s;
+    z-index: 1;
+    margin-bottom: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    animation: changeBorderColor2 5s infinite alternate;
+
+  }
+
+  .lookDown {
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+
+  .wallet3:hover {
+    cursor: pointer;
+  }
+
+  .wallet3::after {
+    transition: all 0.8s
+  }
+
+  .btn3 {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .images_show {
+    width: 90%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .stake {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  .stake2 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .stake3 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  
+
+  .tokenIds {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    margin-bottom: 10%;
+  }
+
+  .tokenIds2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25%;
+  }
+
+  .tS {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 40px;
+    font-family: 'Passion One', sans-serif;
+  }
+
+  .unstakeImg {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+
+  }
+
+  .imagesAndBtn {
+    justify-content: center;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 150px;
+    perspective: 1000px;
+    background-color: #e0706c;
+    height: fit-content;
+
+    margin-top: 10%;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .btnCenter {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .flip-card-front {
+    /* background-color: #bbb;*/
+    color: black;
+  }
+
+  .flip-card-back {
+    /*background-color: #2980b9;*/
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .loginFormNote {
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+  .formMain {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+  }
+
+  .formMain {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+  }
+
+  .formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.857);
+  }
+
+  .ownNFT {
+    margin-top: 18%;
+    margin-bottom: 5.5%;
+  }
+
+  .elementName {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .elementName2 {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .elementName3 {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .medalDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .closeNote {
+    position: absolute;
+    right: 0;
+    top: 1%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 30px;
+
+    background-color: rgba(172, 67, 67, 0);
+    width: 100px;
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+  }
+
+  .closeNote:hover,
+  .closeNote:focus {
+    color: rgb(71, 70, 70);
+  }
+
+  .rewards {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+  }
+
+  .discordB {
+    display: none;
+  }
+
+  .medal {
+    width: 35px;
+    height: 35px;
+  }
+
+  .stakebtn:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtn2:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtnDiv {
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nftImg {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+  }
+
+  .nftImgLogo {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    
+    margin-bottom: 2%;
+  }
+
+  .nftImg2 {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .stakeT {
+    color: #000000;
+    font-family: 'Passion One', sans-serif;
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+  .stakeMainDiv {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
+    background: url('./assets/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .btns {
+
+    width: 150px;
+    background-color: #facc15;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  }
+
+  .claimIcon {
+    width: 22px;
+    height: 22px;
+    margin-top: -5px;
+  }
+
+  .btnsDis {
+    width: 150px;
+    background-color: #77946c;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    cursor: no-drop;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns2 {
+    width: 150px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    background-color: rgb(238, 62, 62);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: none;
+  }
+
+  .btns2Dis {
+    width: 150px;
+    background-color: rgb(196, 134, 134);
+    cursor: no-drop;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns:hover {
+    transform: scale(1.1);
+  }
+
+  .btns2:hover {
+    transform: scale(1.1);
+  }
+
+  .btnsMain {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+  }
+
+  .btnsMainBig {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .markBar {
+    background-color: #000000;
+    margin-top: 2%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00000000;
+    -webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;
+    background-size: contain;
+    padding: 15px;
+
+  }
+
+  .markBarCon {
+    display: flex;
+    flex-flow: row nowrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #000000;
+    border-radius: 20px;
+    border: 2px solid white;
+  }
+
+  .markBar2 {
+    flex-flow: column nowrap;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: -10%;
+  }
+
+  .num {
+    font-size: 15px;
+    color: #ffffff;
+
+    text-align: center;
+  }
+
+  .name {
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+  .nameClaim {
+    background-color: rgb(87, 163, 15);
+    border: 1px solid rgb(166, 253, 84);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+
+  .nameClaim2 {
+    background-color: rgb(79, 158, 4);
+    border: 1px solid rgb(181, 250, 117);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    cursor: not-allowed;
+  }
+
+  .num2 {
+    font-size: 20px;
+    color: #e02712;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .name2 {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .markBar img {
+    width: 70px;
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-right: 20%;
+  }
+
+  .markBarMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .stakeMain {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+  }
+
+  .stakeMain2 {
+    border-right: 20px #f3ba2f solid;
+    border-top: #f3ba2f 20px solid;
+  }
+
+  .sticky {
+    width: 20%;
+
+    bottom: 0;
+    right: 90%;
+    margin-top: -10%;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .board {
+    margin-bottom: 5%;
+    padding: 35px;
+    border: #e02712 7px solid;
+    background-color: #fffa00;
+    border-radius: 50px;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 65%;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .boardMain {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+
+    margin-bottom: 7%;
+  }
+
+  .nameStake {
+    width: 50%;
+  }
+
+  .carrots {
+    width: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .boardPics {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+  }
+
+  .approveBtns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
+
+  .approveBtns1 {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+  }
+
+  .approveBtns1Dis {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+    cursor: no-drop;
+  }
+
+  .approveBtns1:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns2:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3 {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #f51761;
+  }
+
+  .approveBtns3Dis {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #f51761;
+    cursor: no-drop;
+  }
+
+  .approveBtns2 {
+    background: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 23px;
+    border: 4px #70512b solid;
+
+    width: 200px;
+    transition: transform .3s;
+  }
+
+
+  .wallet3 {
+
+    background-color: black;
+    border: solid 3px;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    transition: transform .5s;
+    z-index: 1;
+    margin-bottom: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    animation: changeBorderColor2 5s infinite alternate;
+
+  }
+
+  .lookDown {
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+
+  .wallet3:hover {
+    cursor: pointer;
+  }
+
+  .wallet3::after {
+    transition: all 0.8s
+  }
+
+  .btn3 {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .images_show {
+    width: 90%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .stake {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  .stake2 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: 85px;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .stake3 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  
+
+  .tokenIds {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    margin-bottom: 10%;
+  }
+
+  .tokenIds2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20%;
+  }
+
+  .tS {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 40px;
+    font-family: 'Passion One', sans-serif;
+  }
+
+  .unstakeImg {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+
+  }
+
+  .imagesAndBtn {
+    justify-content: center;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 150px;
+    perspective: 1000px;
+    background-color: #e0706c;
+    height: fit-content;
+
+    margin-top: 10%;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .btnCenter {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .flip-card-front {
+    /* background-color: #bbb;*/
+    color: black;
+  }
+
+  .flip-card-back {
+    /*background-color: #2980b9;*/
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .loginFormNote {
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+  .formMain {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+
+  }
+
+  .formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.857);
+  }
+
+  .ownNFT {
+    margin-top: 13%;
+    margin-bottom: 5.5%;
+  }
+
+
+  .elementName {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .elementName2 {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    margin-top: 5px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .elementName3 {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .medalDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .closeNote {
+    position: absolute;
+    right: 0;
+    top: 1%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 30px;
+
+    background-color: rgba(172, 67, 67, 0);
+    width: 100px;
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+  }
+
+  .closeNote:hover,
+  .closeNote:focus {
+    color: rgb(71, 70, 70);
+  }
+
+  .rewards {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+  }
+
+  .discordB {
+    display: none;
+  }
+
+  .medal {
+    width: 35px;
+    height: 35px;
+  }
+
+  .stakebtn:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtn2:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtnDiv {
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nftImg {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+  }
+
+  .nftImgLogo {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    
+    margin-bottom: 2%;
+  }
+
+  .nftImg2 {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .stakeT {
+    color: #000000;
+    font-family: 'Passion One', sans-serif;
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1919px) {
+
+  .stakeMainDiv {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%), url('./assets/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .btns {
+
+    width: 150px;
+    background-color: #facc15;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  }
+
+  .btnsDis {
+    width: 150px;
+    background-color: #77946c;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    cursor: no-drop;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns2 {
+    width: 150px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    background-color: rgb(238, 62, 62);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: none;
+  }
+
+  .btns2Dis {
+    width: 150px;
+    background-color: rgb(196, 134, 134);
+    cursor: no-drop;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns:hover {
+    transform: scale(1.1);
+  }
+
+  .btns2:hover {
+    transform: scale(1.1);
+  }
+
+  .btnsMain {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+  }
+
+  .btnsMainBig {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .markBar {
+    margin-top: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 16px;
+    background-color: black;
+    padding: 20px;
+    animation: changeBorderColor 5s infinite alternate; /* Change 5s to your desired duration */
+  
+    /* Initial border style */
+    border: 5px dashed #ee5849;
+  }
+
+
+  .markBarCon {
+    background-color: #000000;
+    border-radius: 20px;
+    border: 1px solid white;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 10px;
+    
+  }
+
+  .markBar2 {
+    flex-flow: column nowrap;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: -10%;
+  }
+
+  .num {
+    font-size: 15px;
+    color: #ffffff;
+
+    text-align: center;
+  }
+
+  .name {
+    color: #ffffff;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+  .nameClaim {
+    background-color: rgb(87, 163, 15);
+    border: 1px solid rgb(166, 253, 84);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+  .nameClaim2 {
+    background-color: rgb(79, 158, 4);
+    border: 1px solid rgb(181, 250, 117);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 17px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    cursor: not-allowed;
+  }
+
+  .num2 {
+    font-size: 20px;
+    color: #e02712;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .name2 {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .markBar img {
+    width: 70px;
+    height: 70px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-right: 20%;
+  }
+
+  .markBarMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .stakeMain {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+  }
+
+  .stakeMain2 {
+    border-right: 20px #f3ba2f solid;
+    border-top: #f3ba2f 20px solid;
+  }
+
+  .sticky {
+    width: 20%;
+
+    bottom: 0;
+    right: 90%;
+    margin-top: -10%;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .board {
+    margin-bottom: 5%;
+    padding: 35px;
+    border: #e02712 7px solid;
+    background-color: #fffa00;
+    border-radius: 50px;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 42%;
+    
+  }
+
+  .boardMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+
+  }
+
+  .nameStake {
+    width: 50%;
+  }
+
+  .carrots {
+    width: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .boardPics {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+  }
+
+  .approveBtns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
+
+  .approveBtns1 {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+  }
+
+  .approveBtns1Dis {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+    cursor: no-drop;
+  }
+
+  .approveBtns1:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns2:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3 {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #f51761;
+  }
+
+  .approveBtns3Dis {
+    border: 4px solid black;
+    box-shadow: 0 0 5px gold;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 23px;
+    font-family: 'Russo One', sans-serif;
+    width: 400px;
+    transition: transform .3s;
+    background-color: #f51761;
+    cursor: no-drop;
+  }
+
+  .approveBtns2 {
+    background: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 23px;
+    border: 4px #70512b solid;
+
+    width: 200px;
+    transition: transform .3s;
+  }
+
+
+  .wallet3 {
+
+    background-color: black;
+    border: solid 3px;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 270px;
+    transition: transform .5s;
+    z-index: 1;
+    margin-bottom: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    animation: changeBorderColor2 5s infinite alternate;
+  }
+
+  .lookDown {
+    width: 20px;
+    height: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+
+  .wallet3:hover {
+    cursor: pointer;
+  }
+
+  .wallet3::after {
+    transition: all 0.8s
+  }
+
+  .btn3 {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .images_show {
+    width: 90%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .stake {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  .stake2 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .stake3 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .tokenIds {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    margin-bottom: 10%;
+  }
+
+  .tokenIds2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15%;
+  }
+
+  .tS {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 40px;
+    font-family: 'Passion One', sans-serif;
+  }
+
+  .unstakeImg {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+
+  }
+
+  .imagesAndBtn {
+    justify-content: center;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 150px;
+    perspective: 1000px;
+    background-color: #e0706c;
+    height: fit-content;
+
+    margin-top: 10%;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .btnCenter {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .flip-card-front {
+    /* background-color: #bbb;*/
+    color: black;
+  }
+
+  .flip-card-back {
+    /*background-color: #2980b9;*/
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .loginFormNote {
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+
+  .formMain {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+  }
+
+
+  .formMain2 {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 50%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+    padding: 10px;
+  }
+
+  .formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.857);
+
+  }
+
+  .formMain1-1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+    background-color: #00000062;
+  }
+
+  .ownNFT {
+    margin-top: 8%;
+    margin-bottom: 5.5%;
+  }
+
+  .elementName {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .elementName2 {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: 5px;
+  }
+
+  .claimIcon {
+    width: 22px;
+    height: 22px;
+    margin-top: -5px;
+  }
+
+  .elementName3 {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .medalDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .closeNote {
+    position: absolute;
+    right: 0;
+    top: 1%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 30px;
+
+    background-color: rgba(172, 67, 67, 0);
+    width: 100px;
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+  }
+
+  .closeNote:hover,
+  .closeNote:focus {
+    color: rgb(71, 70, 70);
+  }
+
+  .rewards {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+  }
+
+  .stakebtn:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtn2:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtnDiv {
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nftImg {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+  }
+
+  .nftImgLogo {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    
+    margin-bottom: 2%;
+  }
+
+  .nftImg2 {
+    width: 110px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .stakeT {
+    color: #000000;
+    font-family: 'Passion One', sans-serif;
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+
+  .stakeMainDiv {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
+    background: url('./assets/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .btns {
+
+    width: 150px;
+    background-color: #facc15;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  }
+
+  .btnsDis {
+    width: 150px;
+    background-color: #77946c;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    cursor: no-drop;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns2 {
+    width: 150px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    background-color: rgb(238, 62, 62);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: none;
+  }
+
+  .btns2Dis {
+    width: 150px;
+    background-color: rgb(196, 134, 134);
+    cursor: no-drop;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns:hover {
+    transform: scale(1.1);
+  }
+
+  .btns2:hover {
+    transform: scale(1.1);
+  }
+
+  .btnsMain {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+  }
+
+  .btnsMainBig {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .markBar {
+    margin-top: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 22px;
+    border: 8px dashed #ee5849;
+    background-color: black;
+    padding: 30px;
+    animation: changeBorderColor 5s infinite alternate;
+  }
+
+  .markBarCon {
+    background-color: #000000;
+    border-radius: 30px;
+    border: 1px solid white;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .markBar2 {
+    flex-flow: column nowrap;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: -10%;
+  }
+
+  .num {
+    font-size: 20px;
+    color: #ffffff;
+
+    text-align: center;
+  }
+
+  .name {
+    color: #ffffff;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+  .nameClaim {
+    background-color: rgb(87, 163, 15);
+    border: 2px solid rgb(166, 253, 84);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+
+  .nameClaim2 {
+    background-color: rgb(79, 158, 4);
+    border: 1px solid rgb(181, 250, 117);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 22px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    cursor: not-allowed;
+  }
+
+  .num2 {
+    font-size: 30px;
+    color: #e02712;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .name2 {
+    color: black;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .markBar img {
+    width: 95px;
+    height: 95px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-right: 20%;
+  }
+
+  .markBarMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .stakeMain {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+  }
+
+  .stakeMain2 {
+    border-right: 20px #f3ba2f solid;
+    border-top: #f3ba2f 20px solid;
+  }
+
+  .sticky {
+    width: 20%;
+
+    bottom: 0;
+    right: 90%;
+    margin-top: -10%;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .board {
+    margin-bottom: 5%;
+    padding: 45px;
+    border: #e02712 9px solid;
+    background-color: #fffa00;
+    border-radius: 60px;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 42%;
+  }
+
+  .boardMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+
+  }
+
+  .nameStake {
+    width: 50%;
+  }
+
+  .carrots {
+    width: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .boardPics {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+  }
+
+  .approveBtns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
+
+  .approveBtns1 {
+    border: 6px solid black;
+    color: white;
+    padding: 18px;
+    font-size: 35px;
+    font-family: 'Russo One', sans-serif;
+    width: 500px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+    border-radius: 30px;
+  }
+
+  .approveBtns1Dis {
+    border: 6px solid black;
+    color: white;
+    padding: 18px;
+    font-size: 35px;
+    font-family: 'Russo One', sans-serif;
+    width: 500px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+    border-radius: 30px;
+    cursor: no-drop;
+  }
+
+  .approveBtns1:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns2:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3 {
+    border: 6px solid black;
+    color: white;
+    padding: 18px;
+    font-size: 35px;
+    font-family: 'Russo One', sans-serif;
+    width: 500px;
+    transition: transform .3s;
+    background-color: #f51761;
+    border-radius: 30px;
+  }
+
+  .approveBtns3Dis {
+    border: 6px solid black;
+    color: white;
+    padding: 18px;
+    font-size: 35px;
+    font-family: 'Russo One', sans-serif;
+    width: 500px;
+    transition: transform .3s;
+    background-color: #f51761;
+    border-radius: 30px;
+    cursor: no-drop;
+  }
+
+  .approveBtns2 {
+    background: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 23px;
+    border: 4px #70512b solid;
+
+    width: 200px;
+    transition: transform .3s;
+  }
+
+
+  .wallet3 {
+
+    background-color: black;
+    border: solid 3px;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    transition: transform .5s;
+    z-index: 1;
+    margin-bottom: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    animation: changeBorderColor2 5s infinite alternate;
+
+  }
+
+  .lookDown {
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+
+  .wallet3:hover {
+    cursor: pointer;
+  }
+
+  .wallet3::after {
+    transition: all 0.8s
+  }
+
+  .btn3 {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .images_show {
+    width: 90%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .stake {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  .stake2 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+
+  }
+
+  .stake3 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 25px;
+  }
+
+  .tokenIds {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    margin-bottom: 10%;
+  }
+
+  .tokenIds2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15%;
+  }
+
+  .tS {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 40px;
+    font-family: 'Passion One', sans-serif;
+  }
+
+  .unstakeImg {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+
+  }
+
+  .imagesAndBtn {
+    justify-content: center;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 150px;
+    perspective: 1000px;
+    background-color: #e0706c;
+    height: fit-content;
+
+    margin-top: 10%;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .btnCenter {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .flip-card-front {
+    /* background-color: #bbb;*/
+    color: black;
+  }
+
+  .flip-card-back {
+    /*background-color: #2980b9;*/
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .loginFormNote {
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+  .formMain {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+  }
+
+  .formMain1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.857);
+  }
+
+  .ownNFT {
+    margin-bottom: 12%;
+  }
+
+
+  .elementName {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .elementName2 {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-top: 5px;
+  }
+
+  .claimIcon {
+    width: 25px;
+    height: 25px;
+    margin-top: -5px;
+  }
+
+  .medalDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .closeNote {
+    position: absolute;
+    right: 0;
+    top: 1%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 30px;
+
+    background-color: rgba(172, 67, 67, 0);
+    width: 100px;
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+  }
+
+  .closeNote:hover,
+  .closeNote:focus {
+    color: rgb(71, 70, 70);
+  }
+
+  .rewards {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+  }
+
+  .discordB {
+    display: none;
+  }
+
+  .medal {
+    width: 35px;
+    height: 35px;
+  }
+
+  .stakebtn:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtn2:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtnDiv {
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nftImg {
+    width: 155px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+  }
+
+  .nftImgLogo {
+    width: 155px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    
+    margin-bottom: 2%;
+  }
+
+  .nftImg2 {
+    width: 155px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .stakeT {
+    color: #000000;
+    font-family: 'Passion One', sans-serif;
+    color: black;
+    font-size: 60px;
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 3839px) {
+
+  
+  .stakeMainDiv {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
+    background: url('./assets/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .btns {
+
+    width: 150px;
+    background-color: #facc15;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  }
+
+  .btnsDis {
+    width: 150px;
+    background-color: #77946c;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    cursor: no-drop;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns2 {
+    width: 150px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    background-color: rgb(238, 62, 62);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: none;
+  }
+
+  .btns2Dis {
+    width: 150px;
+    background-color: rgb(196, 134, 134);
+    cursor: no-drop;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns:hover {
+    transform: scale(1.1);
+  }
+
+  .btns2:hover {
+    transform: scale(1.1);
+  }
+
+  .btnsMain {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+  }
+
+  .btnsMainBig {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .markBar {
+    margin-top: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 40px;
+    border: 10px dashed #ee5849;
+    background-color: black;
+    padding: 45px;
+    animation: changeBorderColor 5s infinite alternate;
+  }
+
+  .markBarCon {
+    background-color: #000000;
+    border-radius: 40px;
+    border: 1px solid white;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .markBar2 {
+    flex-flow: column nowrap;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: -10%;
+  }
+
+  .num {
+    font-size: 27px;
+    color: #ffffff;
+
+    text-align: center;
+  }
+
+  .name {
+    color: #ffffff;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+  .nameClaim {
+    background-color: rgb(87, 163, 15);
+    border: 3px solid rgb(166, 253, 84);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+
+  .nameClaim2 {
+    background-color: rgb(79, 158, 4);
+    border: 4px solid rgb(181, 250, 117);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    cursor: not-allowed;
+  }
+
+  .num2 {
+    font-size: 40px;
+    color: #e02712;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .name2 {
+    color: black;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .markBar img {
+    width: 115px;
+    height: 115px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-right: 20%;
+  }
+
+  .markBarMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .stakeMain {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+  }
+
+  .stakeMain2 {
+    border-right: 20px #f3ba2f solid;
+    border-top: #f3ba2f 20px solid;
+  }
+
+  .sticky {
+    width: 20%;
+
+    bottom: 0;
+    right: 90%;
+    margin-top: -10%;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .board {
+    margin-bottom: 5%;
+    padding: 50px;
+    border: #e02712 12px solid;
+    background-color: #fffa00;
+    border-radius: 80px;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 42%;
+  }
+
+  .boardMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+
+  }
+
+  .nameStake {
+    width: 50%;
+  }
+
+  .carrots {
+    width: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .boardPics {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+  }
+
+  .approveBtns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
+
+  .approveBtns1 {
+    border: 8px solid black;
+    color: white;
+    padding: 25px;
+    font-size: 45px;
+    font-family: 'Russo One', sans-serif;
+    width: 700px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+    border-radius: 20px;
+  }
+
+  .approveBtns1Dis {
+    border: 8px solid black;
+    color: white;
+    padding: 25px;
+    font-size: 45px;
+    font-family: 'Russo One', sans-serif;
+    width: 700px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+    border-radius: 20px;
+    cursor: no-drop;
+  }
+
+  .approveBtns1:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns2:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3 {
+    border: 8px solid black;
+    color: white;
+    padding: 25px;
+    font-size: 45px;
+    font-family: 'Russo One', sans-serif;
+    width: 700px;
+    transition: transform .3s;
+    background-color: #f51761;
+    border-radius: 20px;
+  }
+
+  .approveBtns3Dis {
+    border: 8px solid black;
+    color: white;
+    padding: 25px;
+    font-size: 45px;
+    font-family: 'Russo One', sans-serif;
+    width: 700px;
+    transition: transform .3s;
+    background-color: #f51761;
+    border-radius: 20px;
+    cursor: no-drop;
+  }
+
+  .approveBtns2 {
+    background: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 23px;
+    border: 4px #70512b solid;
+
+    width: 200px;
+    transition: transform .3s;
+  }
+
+
+  .wallet3 {
+
+    background-color: black;
+    border: solid 5px;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    transition: transform .5s;
+    z-index: 1;
+    margin-bottom: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    animation: changeBorderColor2 5s infinite alternate;
+
+  }
+
+  .lookDown {
+    width: 30px;
+    height: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+
+  .wallet3:hover {
+    cursor: pointer;
+  }
+
+  .wallet3::after {
+    transition: all 0.8s
+  }
+
+  .btn3 {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .images_show {
+    width: 90%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .stake {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  .stake2 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: max-content;
+    padding: 7px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 25px;
+
+  }
+
+  .stake3 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    font-size: 25px;
+
+  }
+
+  .tokenIds {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    margin-bottom: 10%;
+  }
+
+  .tokenIds2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15%;
+  }
+
+  .tS {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 40px;
+    font-family: 'Passion One', sans-serif;
+  }
+
+  .unstakeImg {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+
+  }
+
+  .imagesAndBtn {
+    justify-content: center;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 150px;
+    perspective: 1000px;
+    background-color: #e0706c;
+    height: fit-content;
+
+    margin-top: 10%;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .btnCenter {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .flip-card-front {
+    /* background-color: #bbb;*/
+    color: black;
+  }
+
+  .flip-card-back {
+    /*background-color: #2980b9;*/
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .loginFormNote {
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+  .formMain {
+    z-index: 10000000000000000;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    border: white 3px solid;
+
+  }
+
+  .formMain2 {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 50%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+    padding: 10px;
+  }
+
+  .formMain1 {
+    z-index: 10000000000000000;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.857);
+  }
+
+  .formMain1-1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+    background-color: #00000062;
+  }
+
+  .ownNFT {
+    margin-top: 8%;
+    margin-bottom: 5.5%;
+  }
+
+  .elementName {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .elementName2 {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .claimIcon {
+    width: 30px;
+    height: 30px;
+    margin-top: -5px;
+  }
+
+  .elementName3 {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .medalDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .closeNote {
+    position: absolute;
+    right: 0;
+    top: 1%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 30px;
+
+    background-color: rgba(172, 67, 67, 0);
+    width: 100px;
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+  }
+
+  .closeNote:hover,
+  .closeNote:focus {
+    color: rgb(71, 70, 70);
+  }
+
+  .rewards {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+  }
+
+  .discordB {
+    display: none;
+  }
+
+  .medal {
+    width: 35px;
+    height: 35px;
+  }
+
+  .stakebtn:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtn2:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtnDiv {
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nftImg {
+    width: 200px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+  }
+
+  .nftImgLogo {
+    width: 200px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    
+    margin-bottom: 2%;
+  }
+
+  .nftImg2 {
+    width: 200px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .stakeT {
+    color: #000000;
+    font-family: 'Passion One', sans-serif;
+    color: black;
+    font-size: 90px;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+
+  .stakeMainDiv {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    height: max-content;
+    background: url('./assets/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .btns {
+
+    width: 150px;
+    background-color: #facc15;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  }
+
+  .btnsDis {
+    width: 150px;
+    background-color: #77946c;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    margin-bottom: 5%;
+    transition: transform .3s;
+    cursor: no-drop;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns2 {
+    width: 150px;
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    background-color: rgb(238, 62, 62);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: none;
+  }
+
+  .btns2Dis {
+    width: 150px;
+    background-color: rgb(196, 134, 134);
+    cursor: no-drop;
+    color: rgb(255, 255, 255);
+    padding: 5px;
+    font-weight: 500;
+    transition: transform .3s;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+
+  .btns:hover {
+    transform: scale(1.1);
+  }
+
+  .btns2:hover {
+    transform: scale(1.1);
+  }
+
+  .btnsMain {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: none;
+  }
+
+  .btnsMainBig {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .markBar {
+    margin-top: 2%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 50px;
+    border: 15px dashed #ee5849;
+    background-color: black;
+    padding: 55px;
+    animation: changeBorderColor 5s infinite alternate;
+  }
+
+  .markBarCon {
+    background-color: #000000;
+    border-radius: 60px;
+    border: 1px solid white;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    padding: 40px;
+  }
+
+  .markBar2 {
+    flex-flow: column nowrap;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: -10%;
+  }
+
+  .num {
+    font-size: 40px;
+    color: #ffffff;
+
+    text-align: center;
+  }
+
+  .name {
+    color: #ffffff;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+  .nameClaim {
+    background-color: rgb(87, 163, 15);
+    border: 3px solid rgb(166, 253, 84);
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    transition: 0.5s ease-in-out;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+  }
+
+
+  .nameClaim2 {
+    background-color: rgb(79, 158, 4);
+    border: 6px solid rgb(181, 250, 117);
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.5s ease-in-out;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+    cursor: not-allowed;
+  }
+
+  .num2 {
+    font-size: 57px;
+    color: #e02712;
+    margin-top: 15px;
+    text-align: center;
+  }
+
+  .name2 {
+    color: black;
+    font-size: 55px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .markBar img {
+    width: 165px;
+    height: 165px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-right: 20%;
+  }
+
+  .markBarMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+
+  .stakeMain {
+    display: flex;
+    flex-flow: column nowrap;
+    overflow: hidden;
+  }
+
+  .stakeMain2 {
+    border-right: 20px #f3ba2f solid;
+    border-top: #f3ba2f 20px solid;
+  }
+
+  .sticky {
+    width: 20%;
+
+    bottom: 0;
+    right: 90%;
+    margin-top: -10%;
+  }
+
+  .items {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+  }
+
+  .board {
+    margin-bottom: 5%;
+    padding: 65px;
+    border: #e02712 14px solid;
+    background-color: #fffa00;
+    
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 42%;
+  }
+
+  .boardMain {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+
+  }
+
+  .nameStake {
+    width: 50%;
+  }
+
+  .carrots {
+    width: 90px;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .boardPics {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-bottom: 8%;
+  }
+
+  .approveBtns {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    margin-top: 2%;
+  }
+
+  .approveBtns1 {
+    border: 12px solid black;
+    color: rgb(255, 255, 255);
+    padding: 35px;
+    font-size: 65px;
+    font-family: 'Russo One', sans-serif;
+    width: 1000px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+  }
+
+  .approveBtns1Dis {
+    border: 12px solid black;
+    color: rgb(255, 255, 255);
+    padding: 35px;
+    font-size: 65px;
+    font-family: 'Russo One', sans-serif;
+    width: 1000px;
+    transition: transform .3s;
+    background-color: #0a74ca;
+    cursor: no-drop;
+  }
+
+  .approveBtns1:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns2:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3:hover {
+    transform: scale(1.1);
+  }
+
+  .approveBtns3 {
+    border: 12px solid black;
+    color: rgb(255, 255, 255);
+    padding: 35px;
+    font-size: 65px;
+    font-family: 'Russo One', sans-serif;
+    width: 1000px;
+    transition: transform .3s;
+    background-color: #f51761;
+  }
+
+  .approveBtns3Dis {
+    cursor: no-drop;
+    border: 12px solid black;
+    color: rgb(255, 255, 255);
+    padding: 35px;
+    font-size: 65px;
+    font-family: 'Russo One', sans-serif;
+    width: 1000px;
+    transition: transform .3s;
+    background-color: #f51761;
+  }
+
+  .approveBtns2 {
+    background: none;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 23px;
+    border: 4px #70512b solid;
+
+    width: 200px;
+    transition: transform .3s;
+  }
+
+
+  .wallet3 {
+
+    background-color: black;
+    border: solid 7px;
+    color: rgb(255, 255, 255);
+    padding: 35px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+    transition: transform .5s;
+    z-index: 1;
+    margin-bottom: 10%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    animation: changeBorderColor2 5s infinite alternate;
+
+  }
+
+  .lookDown {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+
+  .wallet3:hover {
+    cursor: pointer;
+  }
+
+  .wallet3::after {
+    transition: all 0.8s
+  }
+
+  .btn3 {
+    flex-flow: row nowrap;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .link {
+    text-align: center;
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .images_show {
+    width: 90%;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .stake {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    width: fit-content;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+  }
+
+  .stake2 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .stake3 {
+    display: block;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    border: none;
+    width: max-content;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .tokenIds {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    height: max-content;
+    margin-bottom: 10%;
+  }
+
+  .tokenIds2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-flow: row wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15%;
+  }
+
+  .tS {
+    color: white;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 40px;
+    font-family: 'Passion One', sans-serif;
+  }
+
+  .unstakeImg {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+
+  }
+
+  .imagesAndBtn {
+    justify-content: center;
+  }
+
+  .flip-card {
+    background-color: transparent;
+    width: 150px;
+    perspective: 1000px;
+    background-color: #e0706c;
+    height: fit-content;
+
+    margin-top: 10%;
+  }
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .btnCenter {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .flip-card-front {
+    /* background-color: #bbb;*/
+    color: black;
+  }
+
+  .flip-card-back {
+    /*background-color: #2980b9;*/
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .loginFormNote {
+    height: 90%;
+    width: 90%;
+    background-color: rgba(255, 255, 255, 0.13);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+  .formMain {
+    z-index: 10000000000000000;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 80%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    border: white 3px solid;
+
+  }
+
+  .formMain2 {
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.856);
+    position: fixed;
+    width: 50%;
+    height: 80vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    overflow: scroll;
+    overflow-x: hidden;
+    border-radius: 10px;
+    z-index: 100000;
+    border: white 3px solid;
+    padding: 10px;
+  }
+
+  .formMain1 {
+    z-index: 10000000000000000;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.857);
+  }
+
+  .formMain1-1 {
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 100000;
+    background-color: #00000062;
+  }
+
+  .ownNFT {
+    margin-top: 8%;
+    margin-bottom: 5.5%;
+  }
+
+  .elementName {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .elementName2 {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .claimIcon {
+    width: 35px;
+    height: 35px;
+    margin-top: -5px;
+  }
+
+  .elementName3 {
+    font-weight: 500;
+    color: red;
+    font-size: 20px;
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .medalDiv {
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .closeNote {
+    position: absolute;
+    right: 0;
+    top: 1%;
+    color: rgba(255, 255, 255, 0.836);
+    font-size: 30px;
+
+    background-color: rgba(172, 67, 67, 0);
+    width: 100px;
+    height: fit-content;
+    cursor: pointer;
+    border: none;
+  }
+
+  .closeNote:hover,
+  .closeNote:focus {
+    color: rgb(71, 70, 70);
+  }
+
+  .rewards {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+  }
+
+  .discordB {
+    display: none;
+  }
+
+  .medal {
+    width: 35px;
+    height: 35px;
+  }
+
+  .stakebtn:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtn2:hover {
+    transform: scale(1.1);
+  }
+
+  .stakebtnDiv {
+
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+  }
+
+  .nftImg {
+    width: 300px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+  }
+
+  .nftImgLogo {
+    width: 300px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 2%;
+  }
+
+  .nftImg2 {
+    width: 300px;
+    margin-top: 20%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+  }
+
+  .stakeT {
+    color: #000000;
+    font-family: 'Passion One', sans-serif;
+    color: black;
+    font-size: 120px;
+  }
+}
